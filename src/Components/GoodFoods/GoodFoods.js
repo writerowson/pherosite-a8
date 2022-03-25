@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import Food from '../Food/Food';
 
 const GoodFoods = () => {
     const [foods, setFoods] = useState([])
 
     useEffect(() => {
-
-    }, [])
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setFoods(data))
+    }, [foods])
 
     return (
         <div>
-            <h3>Eat to live or Love to eat</h3>
+            {foods.map(gdFood => <Food key={gdFood.id} foodData={gdFood}></Food>)}
         </div>
     );
 };
