@@ -2,13 +2,13 @@
     {
         "id": "1",
         "price": 33,
-        "name": "Garcia Garner",
+        "name": "Andda Pasta",
         "img": "https://img.freepik.com/free-photo/close-up-delicious-asian-food_23-2149091584.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     },
     {
         "id": "2",
         "price": 40,
-        "name": "Kinney Taylor",
+        "name": "Suop noodles",
         "img": "https://img.freepik.com/free-photo/close-up-delicious-asian-food_23-2149091616.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     },
     {
@@ -20,37 +20,37 @@
     {
         "id": "4",
         "price": 9,
-        "name": "5",
+        "name": "Zhole noodles ",
         "img": "https://img.freepik.com/free-photo/close-up-delicious-asian-food_23-2149091592.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     },
     {
         "id": "5",
         "price": 36,
-        "name": "Tracey Shepard",
+        "name": "Noodles Shepard",
         "img": "https://img.freepik.com/free-photo/delicious-asian-noodles-concept_23-2148773773.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     },
     {
         "id": "6",
         "price": 27,
-        "name": "Chang Reilly",
+        "name": "Chang olives",
         "img": "https://img.freepik.com/free-photo/variety-green-black-whole-olives_114579-37133.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     },
     {
         "id": "7",
         "price": 54,
-        "name": "Chang Reilly",
+        "name": "Potato Reilly",
         "img": "https://img.freepik.com/free-photo/front-view-baked-potatoes-with-cooked-vegetables-dark-space_140725-79240.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     },
     {
         "id": "8",
         "price": 91,
-        "name": "Chang Reilly",
+        "name": "Salty sandwiches",
         "img": "https://img.freepik.com/free-photo/front-view-tasty-ham-sandwiches-with-french-fries-dark-surface_179666-34648.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     },
     {
         "id": "9",
         "price": 32,
-        "name": "Chang Reilly",
+        "name": "Chang tert",
         "img": "https://img.freepik.com/free-photo/top-view-tacos-with-vegetables-meat_23-2148750432.jpg?size=338&ext=jpg&uid=R26323577&ga=GA1.2.339858593.1640990583"
     }
 ]
