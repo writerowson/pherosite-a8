@@ -11,8 +11,15 @@ const GoodFoods = () => {
     }, [foods])
 
     return (
-        <div className='container row'>
-            {foods.map(gdFood => <Food key={gdFood.id} foodData={gdFood}></Food>)}
+        <div className=' row'>
+            <div className='container col col-lg-8 col-md-8 col-6 '>
+
+                <div className='row'>
+                    {foods.map(gdFood => <Food key={gdFood.id} foodData={gdFood}></Food>)}
+                </div>
+
+            </div>
+            <div className=' container col col-lg-4 col-md-4 col-6 border border-danger bg-light'>Hi</div>
         </div>
     );
 };
