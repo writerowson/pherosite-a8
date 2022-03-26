@@ -1,7 +1,8 @@
 import React from 'react';
 import './Cart.css'
 const Cart = ({ cart, randomChoose, reset }) => {
-
+    // const randomOne = []
+    // console.log(randomOne)
     if (cart && cart.length < 5) {
         return (
             <div className='cart bg-light'>
@@ -10,11 +11,12 @@ const Cart = ({ cart, randomChoose, reset }) => {
                 {
                     cart.map(item => <li key={item.id}>{item.name}</li>)
                 }
-                <p> </p>
+
+                {/* <p>{displayRandomItem !== -1 ? displayRandomItem?.name : null} </p> */}
 
                 <button onClick={() => randomChoose()} className='btn btn-danger fw-bold mt-3'>Final Selection</button>
                 <div >
-                    <button onClick={reset} className='btn btn-success fw-bold mt-3'> Reset selection</button>
+                    <button onClick={() => reset()} className='btn btn-success fw-bold mt-3'> Reset selection</button>
                 </div>
             </div>
         );

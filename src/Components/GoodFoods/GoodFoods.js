@@ -6,6 +6,8 @@ import './GoodFoods.css'
 const GoodFoods = () => {
     const [foods, setFoods] = useState([])
     const [cart, setcart] = useState([])
+    const [randomOne, setRandom] = useState(-1)
+    const [resetItem, setResetItem] = useState()
 
     useEffect(() => {
         fetch('data.json')
@@ -16,12 +18,16 @@ const GoodFoods = () => {
     const handleCart = (foodData) => {
         const newcart = [...cart, foodData]
         setcart(newcart)
+        console.log(newcart)
     }
     const randomChoose = () => {
         const randomItem = cart[Math.floor(Math.random() * cart.length)]
-        setcart(randomItem.name)
+        setRandom(randomItem.name)
         console.log(randomItem.name);
     }
+
+
+
 
     return (
         <div className=' row'>
@@ -36,7 +42,7 @@ const GoodFoods = () => {
 
             </div>
             <div className=' cart1 container col col-lg-4 col-md-4 col-6 '>
-                <Cart cart={cart} randomChoose={randomChoose}></Cart>
+                <Cart cart={cart} randomOne={randomOne} randomChoose={randomChoose}></Cart>
             </div>
         </div>
     );
