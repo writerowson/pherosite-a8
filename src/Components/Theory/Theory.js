@@ -14,7 +14,7 @@ const Theory = () => {
                     <li>Props can pass data one components to another. State can only pass under within a component.</li>
                     <li>Props are read-only. State is both read-only and write.</li>
                     <li> Props can be changed by parent components but state  can't be changed .</li>
-                    <li>Props can change in child coponents but state can't</li>
+                    <li>Props can change in child components but state can't</li>
                 </p>
             </div>
         </div>

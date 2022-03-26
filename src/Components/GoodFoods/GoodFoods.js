@@ -6,7 +6,8 @@ import './GoodFoods.css'
 const GoodFoods = () => {
     const [foods, setFoods] = useState([])
     const [cart, setcart] = useState([])
-    const [randomOne, setRandom] = useState(-1)
+    const [randomOne, setRandom] = useState([])
+
     const [resetItem, setResetItem] = useState()
 
     useEffect(() => {
