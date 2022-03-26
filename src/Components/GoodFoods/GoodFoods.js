@@ -16,7 +16,11 @@ const GoodFoods = () => {
     const handleCart = (foodData) => {
         const newcart = [...cart, foodData]
         setcart(newcart)
-        console.log(newcart)
+    }
+    const randomChoose = () => {
+        const randomItem = cart[Math.floor(Math.random() * cart.length)]
+        setcart(randomItem.name)
+        console.log(randomItem.name);
     }
 
     return (
@@ -32,7 +36,7 @@ const GoodFoods = () => {
 
             </div>
             <div className=' cart1 container col col-lg-4 col-md-4 col-6 '>
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} randomChoose={randomChoose}></Cart>
             </div>
         </div>
     );
