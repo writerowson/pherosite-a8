@@ -3,7 +3,8 @@
     top:0;
     padding:  10px;
     color: rgb(14, 0, 0);
-    border: 3px solid white
+    border: 3px solid rgb(207, 40, 96);
+    border-radius: 7px;
     }
 
 .cart-alert{
@@ -11,6 +12,10 @@
     top:0rem;
     color: rgb(14, 0, 0);
     border: 3px solid white;
+    border-radius: 7px;
         padding-top:100px ;
         padding-bottom: 100px;
+}
+.reset{
+    background-color:  rgb(14, 0, 0);
 }

@@ -4,15 +4,15 @@ const Cart = ({ cart }) => {
 
     if (cart.length < 5) {
         return (
-            <div className='cart bg-danger '>
+            <div className='cart bg-light '>
                 <h3>Selected Items </h3>
                 <h5>Items : {cart.length}</h5>
                 {
                     cart.map(item => <li key={item.id}>{item.name}</li>)
                 }
-                <button className='btn btn-light mt-3'>Final Selection</button>
-                <div>
-                    <button className='btn btn-dark mt-3'> Reset selection</button>
+                <button className='btn btn-danger fw-bold mt-3'>Final Selection</button>
+                <div >
+                    <button className='btn btn-success fw-bold mt-3'> Reset selection</button>
                 </div>
             </div>
         );
@@ -20,7 +20,7 @@ const Cart = ({ cart }) => {
     else {
         return (
             <div className='cart-alert bg-danger '>
-                <h4>"Sorry, You can't add more than 4 item."</h4>
+                <h4>"Sorry, You can add only 4 items."</h4>
             </div>
         )
     }
