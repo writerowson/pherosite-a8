@@ -8,7 +8,6 @@ const GoodFoods = () => {
     const [cart, setcart] = useState([])
     const [randomOne, setRandom] = useState([])
 
-    const [resetItem, setResetItem] = useState()
 
     useEffect(() => {
         fetch('data.json')
@@ -17,21 +16,33 @@ const GoodFoods = () => {
     }, [foods])
 
     const handleCart = (foodData) => {
-        const newcart = [...cart, foodData]
-        setcart(newcart)
-        console.log(newcart)
+
+        let existingItem = cart.find((data) => data.id === foodData.id);
+        if (existingItem) {
+            alert(
+                "Sorry, You can add only 1 item at a time."
+            )
+        }
+        else {
+            const newcart = [...cart, foodData]
+            setcart(newcart)
+        }
+
     }
     const randomChoose = () => {
         const randomItem = cart[Math.floor(Math.random() * cart.length)]
-        setRandom(randomItem.name)
+        setRandom([randomItem.name])
         console.log(randomItem.name);
     }
-
-
-
+    const [resetItem, setResetItem] = useState()
+    const reset = () => {
+        setcart([])
+        setRandom([])
+    }
 
     return (
-        <div className=' row'>
+
+        < div className=' row' >
             <div className='container col col-lg-8 col-md-8 col-6 '>
 
                 <div className='row'>
@@ -43,9 +54,9 @@ const GoodFoods = () => {
 
             </div>
             <div className=' cart1 container col col-lg-4 col-md-4 col-6 '>
-                <Cart cart={cart} randomOne={randomOne} randomChoose={randomChoose}></Cart>
+                <Cart cart={cart} randomOne={randomOne} randomChoose={randomChoose} resetItem={resetItem} reset={reset}></Cart>
             </div>
-        </div>
+        </div >
     );
 };
 
