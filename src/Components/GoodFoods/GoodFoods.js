@@ -16,7 +16,6 @@ const GoodFoods = () => {
     }, [foods])
 
     const handleCart = (foodData) => {
-
         let existingItem = cart.find((data) => data.id === foodData.id);
         if (existingItem) {
             alert(
