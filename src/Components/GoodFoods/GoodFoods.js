@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import Cart from '../Cart/Cart';
 import Food from '../Food/Food';
 import './GoodFoods.css'
 
 const GoodFoods = () => {
+    <Spinner
+        animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+    </Spinner>
     const [foods, setFoods] = useState([])
     const [cart, setcart] = useState([])
     const [randomOne, setRandom] = useState([])
@@ -35,8 +40,14 @@ const GoodFoods = () => {
     }
     const [resetItem, setResetItem] = useState()
     const reset = () => {
+<<<<<<< HEAD
         setcart([])
         setRandom([])
+=======
+        const resetAll = []
+        setResetItem(resetAll)
+        console.log(resetAll)
+>>>>>>> 7c93ae8e664985894130d6cfccdcc2c4e5a54a6b
     }
 
     return (
