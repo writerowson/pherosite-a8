@@ -14,17 +14,11 @@ const Cart = ({ cart, randomOne, randomChoose, resetItem, reset }) => {
                 <h4 className='border border-danger m-3 p-3'>{randomOne}</h4>
                 <button onClick={() => randomChoose()} className='btn btn-danger fw-bold mt-3 mb-3'>Final Selection</button>
 
-<<<<<<< HEAD
                 <div>
                     <button onClick={(resetItem) => reset(resetItem)} className='btn btn-success fw-bold  '> Reset selection</button>{''}
 
                 </div>
             </div >
-=======
-                <div>         <button onClick={(resetItem) => reset(resetItem)} className='btn btn-success fw-bold  '> Reset selection</button>{''}</div>
-
-            </div>
->>>>>>> 7c93ae8e664985894130d6cfccdcc2c4e5a54a6b
         );
     }
     else {

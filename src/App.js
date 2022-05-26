@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <header className='p-3'></header>
       <h1 className='text-danger mb-5'>Good Foods</h1>
-      <Spinner animation="border" variant="danger" />
       <GoodFoods></GoodFoods>
       <Theory></Theory>
 
